@@ -46,9 +46,11 @@
                 <h5>Completed Tasks</h5>
                 <!-- List of all the tasks that have completed -->
                 <div class="card m-1">
+                    {% for completed in completed_task%}
                     <div class="card-body">
-                        This is the completed task.
+                        {{completed.task}}
                     </div>
+                     {% endfor %}
                 </div>
             </div>
         </div>
