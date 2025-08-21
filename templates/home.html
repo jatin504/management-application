@@ -49,6 +49,9 @@
                     {% for completed in completed_task%}
                     <div class="card-body">
                         {{completed.task}}
+                        <span style="position: relative; float: right;">
+                            <a class="btn btn-danger" href="{% url 'mark_as_un_done' completed.pk %}"><i class="fa fa-times"></i> Mark as Un Done</a>
+                        </span>
                     </div>
                      {% endfor %}
                 </div>
