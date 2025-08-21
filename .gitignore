@@ -1,2 +1,23 @@
-# created by virtualenv automatically
-*
+# Ignore Python cache and bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Ignore virtual environment
+venv/
+Lib/
+Scripts/
+pyvenv.cfg
+
+# Ignore SQLite database
+db.sqlite3
+
+# Ignore IDE/editor files
+.idea/
+.vscode/
+
+# Ignore environment files
+.env
+*.log
+
+# But keep everything else
